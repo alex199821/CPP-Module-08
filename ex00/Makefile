@@ -2,7 +2,7 @@ NAME = easyfind
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++11 #-fsanitize=address
 
-SRCS =  main.cpp easyfind
+SRCS =  main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
