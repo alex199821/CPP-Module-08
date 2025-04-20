@@ -6,7 +6,7 @@
 /*   By: macbook <macbook@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 17:20:42 by auplisas          #+#    #+#             */
-/*   Updated: 2025/04/20 16:54:37 by macbook          ###   ########.fr       */
+/*   Updated: 2025/04/20 18:15:35 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,18 @@ class Span
   private:
 	unsigned int _N;
 	std::vector<int> _spanOfNumbers;
+
   public:
-	//Constructors
+	// Constructors
 	Span();
 	Span(unsigned int N);
 	~Span();
 	Span &operator=(const Span &copy);
 	Span(const Span &copy);
-	//Extras
+	// Extras
 	void addNumber(const int n);
+	int shortestSpan() const;
+	int longestSpan() const;
 };
 
 // template <typename T> typename T::const_iterator easyfind(const T &intContainer,
