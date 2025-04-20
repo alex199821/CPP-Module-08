@@ -6,9 +6,11 @@
 /*   By: macbook <macbook@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 17:20:42 by auplisas          #+#    #+#             */
-/*   Updated: 2025/04/20 18:15:35 by macbook          ###   ########.fr       */
+/*   Updated: 2025/04/20 20:26:39 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#pragma once
 
 #include <algorithm>
 #include <iostream>
@@ -33,18 +35,12 @@ class Span
 	void addNumber(const int n);
 	int shortestSpan() const;
 	int longestSpan() const;
+	//Template
+	template <typename InputIterator>
+	void addNumbers(InputIterator begin, InputIterator end)
+	{
+		if (static_cast<size_t>(std::distance(begin, end)) + _spanOfNumbers.size() > _N)
+			throw std::runtime_error("Adding this range would exceed Span capacity");
+		_spanOfNumbers.insert(_spanOfNumbers.end(), begin, end);
+	}
 };
-
-// template <typename T> typename T::const_iterator easyfind(const T &intContainer,
-// 	int numberToFind)
-// {
-// 	auto foundPosition = std::find(intContainer.begin(), intContainer.end(),
-// 			numberToFind);
-
-// 	if (foundPosition == intContainer.end())
-// 	{
-// 		throw std::runtime_error("Number not found in the container.");
-// 	}
-
-// 	return (foundPosition);
-// }
