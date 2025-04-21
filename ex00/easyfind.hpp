@@ -6,9 +6,11 @@
 /*   By: macbook <macbook@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 17:20:42 by auplisas          #+#    #+#             */
-/*   Updated: 2025/04/18 02:18:43 by macbook          ###   ########.fr       */
+/*   Updated: 2025/04/20 21:01:19 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#pragma once
 
 #include <algorithm>
 #include <iostream>
