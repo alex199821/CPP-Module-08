@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: macbook <macbook@student.42.fr>            +#+  +:+       +#+        */
+/*   By: auplisas <auplisas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/20 18:44:34 by macbook           #+#    #+#             */
-/*   Updated: 2025/06/08 19:37:10 by macbook          ###   ########.fr       */
+/*   Updated: 2025/06/15 15:53:54 by auplisas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,3 +83,26 @@ int	main(void)
 	
 	return (0);
 }
+
+// #include <list>
+
+// std::list<int> mstack;
+// mstack.push_back(5);
+// mstack.push_back(17);
+// std::cout << mstack.back() << std::endl;
+// mstack.pop_back();
+// std::cout << mstack.size() << std::endl;
+// mstack.push_back(3);
+// mstack.push_back(5);
+// mstack.push_back(737);
+// //[...]
+// mstack.push_back(0);
+// std::list<int>::iterator it = mstack.begin();
+// std::list<int>::iterator ite = mstack.end();
+// ++it;
+// --it;
+// while (it != ite)
+// {
+// 	std::cout << *it << std::endl;
+// 	++it;
+// }
